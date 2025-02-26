@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced Web Page - Iwan Hofstra</title>
+    <style>
+
+/*I used various methods, shown in the slides, 
+so that I could learn them A bit. This page does not have a cohesion. */
+
+/*All things used are royalty free!*/
+
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Styling headings */
+        h1 {
+            color: navy;
+            text-align: center;
+        }
+
+        /* Box model demonstration */
+        .box {
+            width: 300px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 20px auto;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        /* Styling the table */
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* CSS Selectors: ID and Class */
+        #unique-text {
+            color: darkred;
+            font-weight: bold;
+        }
+
+        .hover-effect:hover {
+            color: green;
+            font-size: larger;
+        }
+
+        /* Pseudo-element example */
+        p::first-letter {
+            color: red;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main heading -->
+    <h1>Enhanced Web Page with More Features</h1>
+
+    <!-- Box Model Example -->
+    <div class="box">
+        This is a box demonstrating the CSS Box Model.
+    </div>
+
+    <!-- Subheading -->
+    <h2>The technique for a subheading is writing this: &lt;h2&gt;</h2>
+
+    <p>The <b id="unique-text">importance</b> of this assignment is understanding the language.</p>
+    <p class="hover-effect">Hover over this text to see the effect.</p>
+
+    <!-- Ordered list example -->
+    <p>Let us make a list:</p>
+    <ol>
+        <li>This is an ordered list</li>
+        <li>There are also unordered lists</li>
+        <li>Definition lists also exist</li>
+    </ol>
+
+    <!-- Table example -->
+    <table>
+        <caption>This is a table.</caption>
+        <tr>
+            <th>Row 1</th>
+            <th>Row 2</th>
+            <th>Row 3</th>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>Bonjour</td>
+            <td>Guten Tag</td>
+        </tr>
+    </table>
+
+    <!-- Image example -->
+    <p>This is an image:</p>
+    <img src="figures/OIP.jpeg" alt="Random image" title="This image is royalty-free">
+
+    <video width="640" height="360" controls>
+        <source src="figures/royalte_free.mp4" type="video/mp4">
+        error
+    </video>
+    
+
+    <!-- Audio element -->
+    <audio controls>
+        <source src="figures/short_audio.mp3" type="audio/mpeg">
+        error
+    </audio>
+    
+
+    <!-- Iframe (Google Maps Example) -->
+    <h2>Embedded Content</h2>
+    <iframe width="600" height="450" style="border:0;" 
+        loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160991751!2d72.74109952577236!3d19.082522322480817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf2c8d1d14c5%3A0x5a358b8f17a2a5cf!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1614338377993!5m2!1sen!2sin">
+    </iframe>
+
+    <!-- Progress bar -->
+    <h2>Progress Example</h2>
+    <progress value="70" max="100"></progress>
+
+    <!-- Interactive details element -->
+    <details>
+        <summary>Click to see more details</summary>
+        <p>This is a hidden detail section that expands when clicked.</p>
+    </details>
+
+    <!-- Form Example -->
+    <h2>Subscribe to my newsletter</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Subscribe">
+    </form>
+
+    <!-- JavaScript Example -->
+    <h2>Interactive Button</h2>
+    <button onclick="changeText()">Click me to change text</button>
+    <p id="changeable-text">This text will change when you click the button.</p>
+
+    <script>
+        function changeText() {
+            document.getElementById("changeable-text").innerText = "Text changed!";
+        }
+    </script>
+
+</body>
+</html>
